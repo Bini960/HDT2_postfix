@@ -1,16 +1,16 @@
-// Permite que se usen las pilas tipo Vector, 
+// Permite que se usen pilas tipo ArrayList,
 // solo con los métodos que definimos
 
+import java.util.ArrayList;
 import java.util.EmptyStackException;
-import java.util.Vector;
 
-public class VectorStack<T> implements IStack<T> {
+public class ArrayListStack<T> implements IStack<T> {
 
-    private Vector<T> data;
+    private ArrayList<T> data;
 
     // Constructor para tener una pila vacía
-    public VectorStack() {
-        data = new Vector<>();
+    public ArrayListStack() {
+        data = new ArrayList<>();
     }
 
     // _____________________________________________________________________________________________
