@@ -1,0 +1,14 @@
+*.class
+
+bin/
+build/
+out/
+target/
+
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+*.iml
+*.ctxt
