@@ -10,24 +10,23 @@ public class CalculadoraException extends Exception{
     }
 
     // Cuando tratan de dividir por cero
-    class DivisionPorCeroException extends CalculadoraException{
+    static class DivisionPorCeroException extends CalculadoraException{
         public DivisionPorCeroException() {
             super("Error: División por cero");
         }
     }
 
     // Cuando no hay suficientes operandos
-    class OperandosInsuficientesException extends CalculadoraException{
+    static class OperandosInsuficientesException extends CalculadoraException{
         public OperandosInsuficientesException() {
             super("Error: Operandos insuficientes");
         }
     }
 
     // Cuando hay caracteres inválidos
-    class CaracterInvalidoException extends CalculadoraException{
-        public CaracterInvalidoException() {
-            super("Error: Caracteres inválidos");
-            // super("Error: Caracteres inválidos: '" + caracter + "'");
+    static class CaracterInvalidoException extends CalculadoraException{
+        public CaracterInvalidoException(String caracter) {
+            super("Error: Caracteres inválidos: '" + caracter + "'");
         }
     }
 }
